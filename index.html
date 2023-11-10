@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drumkit Simulator</title>
+    <link rel="icon" href="./images/drums.png" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Lao&family=Poppins:wght@400;500;600&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header_logo">
+            <div class="header_logo_icon"></div>
+            <h1>Drum Simulator</h1>
+        </div>
+        <div class="header_button">
+            <a href="#">Menu</a>
+            <a href="#">Record</a>
+            <img src="./images/arrow-down.png" alt="Arrow_image">
+        </div>
+    </header>
+    <main>
+        <section class="drums">
+            <div class="drums_top">
+                <div class="drums_container">
+                    <div class="drum_icon_border"></div>
+                    <div class="drums_icon key" data-key="68" style="background: white url(./images/Drum-01.jpg) no-repeat center/contain;">
+                        <p>Press "D"</p>
+                    </div>
+                    <p>High Tom</p>
+                </div>
+                <div class="drums_container">
+                    <div class="drum_icon_border"></div>
+                    <div class="drums_icon key" data-key="70" style="background: white url(./images/Drum-02.jpg) no-repeat center/contain;">
+                        <p>Press "F"</p>
+                    </div>
+                    <p>Medium Tom</p>
+                </div>
+                <div class="drums_container">
+                    <div class="drum_icon_border"></div>
+                    <div class="drums_icon key" data-key="71" style="background: white url(./images/Drum-03.jpg) no-repeat center/contain;">
+                        <p>Press "G"</p>
+                    </div>
+                    <p>Snare Drum</p>
+                </div>
+                <div class="drums_container">
+                    <div class="drum_icon_border"></div>
+                    <div class="drums_icon key" data-key="72" style="background: white url(./images/Drum-04.jpg) no-repeat center/contain;">
+                        <p>Press "H"</p>
+                    </div>
+                    <p>Floor Tom</p>
+                </div>
+            </div>
+            <div class="drums_mid">
+                <div class="drums_container">
+                    <div class="drum_icon_border"></div>
+                    <div class="drums_icon key" data-key="74" style="background: white url(./images/Drum-06.jpg) no-repeat center/contain;">
+                        <p>Press "J"</p>
+                    </div>
+                    <p>Cymbal</p>
+                </div>
+                <div class="drums_container">
+                    <div class="drum_icon_border"></div>
+                    <div class="drums_icon key" data-key="75" style="background: white url(./images/Drum-07.jpg) no-repeat center/contain;">
+                        <p>Press "K"</p>
+                    </div>
+                    <p>Hi-Hats</p>
+                </div>
+            </div>
+            <div class="drums_bottom">
+                <div class="drums_container">
+                    <div class="drum_icon_border"></div>
+                    <div class="drums_icon key" data-key="76" style="background: white url(./images/Drum-05.jpg) no-repeat center/contain;">
+                        <p>Press "L"</p>
+                    </div>
+                    <p>Bass Drum</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <h3>Learn from the basics, After build a kingdom</h3>
+        <p>Created by Achuprasad &copy;</p>
+    </footer>
+    <script src="./script.js"></script>
+
+    <audio data-key="68" src="./sounds/High_tom.mp3"></audio>
+    <audio data-key="70" src="./sounds/Medium_tom.mp3"></audio>
+    <audio data-key="71" src="./sounds/snare_drum.mp3"></audio>
+    <audio data-key="72" src="./sounds/Floor_tom.mp3"></audio>
+    <audio data-key="74" src="./sounds/Crash_cymbal.mp3"></audio>
+    <audio data-key="75" src="./sounds/hi-Hat.mp3"></audio>
+    <audio data-key="76" src="./sounds/Bass_drum.mp3"></audio>
+</body>
+</html>
